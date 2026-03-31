@@ -73,13 +73,14 @@ class ViewController: UIViewController {
         tf.placeholder = "Enter amount in USD"
         tf.borderStyle = .roundedRect
         tf.keyboardType = .decimalPad
+        tf.accessibilityIdentifier = AccessibilityID.amountTextField
         return tf
     }()
     
     private let currencySegmentedControl: UISegmentedControl = {
         let sc = UISegmentedControl(items: ["EUR", "GBP"])
         sc.selectedSegmentIndex = 0
-        sc.accessibilityIdentifier = "currencySelector"
+        sc.accessibilityIdentifier = AccessibilityID.currencySelector
         return sc
     }()
     
@@ -89,7 +90,7 @@ class ViewController: UIViewController {
         btn.backgroundColor = .systemBlue
         btn.setTitleColor(.white, for: .normal)
         btn.layer.cornerRadius = 8
-        btn.accessibilityIdentifier = "convertButton"
+        btn.accessibilityIdentifier = AccessibilityID.convertButton
         return btn
     }()
     
@@ -97,13 +98,14 @@ class ViewController: UIViewController {
         let label = UILabel()
         label.text = "Result will appear here"
         label.textAlignment = .center
-        label.accessibilityIdentifier = "resultLabel"
+        label.accessibilityIdentifier = AccessibilityID.resultLabel
         return label
     }()
     
     private let loadingIndicator: UIActivityIndicatorView = {
         let indicator = UIActivityIndicatorView(style: .medium)
         indicator.hidesWhenStopped = true
+        indicator.accessibilityIdentifier = AccessibilityID.loadingIndicator
         return indicator
     }()
 

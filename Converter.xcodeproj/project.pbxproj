@@ -6,7 +6,18 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXContainerItemProxy section */
+		A12B340B2F153E6E000ABA2B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F04E2CD12F153E6E000ABA2B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F04E2CD82F153E6E000ABA2B;
+			remoteInfo = Converter;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		A12B34012F153E6E000ABA2B /* ConverterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConverterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F04E2CD92F153E6E000ABA2B /* Converter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Converter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -18,9 +29,24 @@
 			);
 			target = F04E2CD82F153E6E000ABA2B /* Converter */;
 		};
+		F950C6E32F7C20FF00FBB5C5 /* Exceptions for "ConverterUITests" folder in "Converter" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				AccessibilityIdentifiers.swift,
+			);
+			target = F04E2CD82F153E6E000ABA2B /* Converter */;
+		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		A12B34022F153E6E000ABA2B /* ConverterUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				F950C6E32F7C20FF00FBB5C5 /* Exceptions for "ConverterUITests" folder in "Converter" target */,
+			);
+			path = ConverterUITests;
+			sourceTree = "<group>";
+		};
 		F04E2CDB2F153E6E000ABA2B /* Converter */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
@@ -32,6 +58,13 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		A12B34042F153E6E000ABA2B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F04E2CD62F153E6E000ABA2B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -46,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				F04E2CDB2F153E6E000ABA2B /* Converter */,
+				A12B34022F153E6E000ABA2B /* ConverterUITests */,
 				F04E2CDA2F153E6E000ABA2B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				F04E2CD92F153E6E000ABA2B /* Converter.app */,
+				A12B34012F153E6E000ABA2B /* ConverterUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -61,6 +96,29 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		A12B34032F153E6E000ABA2B /* ConverterUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A12B34072F153E6E000ABA2B /* Build configuration list for PBXNativeTarget "ConverterUITests" */;
+			buildPhases = (
+				A12B34052F153E6E000ABA2B /* Sources */,
+				A12B34042F153E6E000ABA2B /* Frameworks */,
+				A12B34062F153E6E000ABA2B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A12B340C2F153E6E000ABA2B /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				A12B34022F153E6E000ABA2B /* ConverterUITests */,
+			);
+			name = ConverterUITests;
+			packageProductDependencies = (
+			);
+			productName = ConverterUITests;
+			productReference = A12B34012F153E6E000ABA2B /* ConverterUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		F04E2CD82F153E6E000ABA2B /* Converter */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F04E2CEC2F153E6E000ABA2B /* Build configuration list for PBXNativeTarget "Converter" */;
@@ -93,6 +151,9 @@
 				LastSwiftUpdateCheck = 2620;
 				LastUpgradeCheck = 2620;
 				TargetAttributes = {
+					A12B34032F153E6E000ABA2B = {
+						TestTargetID = F04E2CD82F153E6E000ABA2B;
+					};
 					F04E2CD82F153E6E000ABA2B = {
 						CreatedOnToolsVersion = 26.2;
 					};
@@ -113,11 +174,19 @@
 			projectRoot = "";
 			targets = (
 				F04E2CD82F153E6E000ABA2B /* Converter */,
+				A12B34032F153E6E000ABA2B /* ConverterUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		A12B34062F153E6E000ABA2B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F04E2CD72F153E6E000ABA2B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -128,6 +197,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		A12B34052F153E6E000ABA2B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F04E2CD52F153E6E000ABA2B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -137,7 +213,51 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		A12B340C2F153E6E000ABA2B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F04E2CD82F153E6E000ABA2B /* Converter */;
+			targetProxy = A12B340B2F153E6E000ABA2B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		A12B34082F153E6E000ABA2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.com.ConverterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Converter;
+			};
+			name = Debug;
+		};
+		A12B34092F153E6E000ABA2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.com.ConverterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Converter;
+			};
+			name = Release;
+		};
 		F04E2CED2F153E6E000ABA2B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -324,6 +444,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		A12B34072F153E6E000ABA2B /* Build configuration list for PBXNativeTarget "ConverterUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A12B34082F153E6E000ABA2B /* Debug */,
+				A12B34092F153E6E000ABA2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		F04E2CD42F153E6E000ABA2B /* Build configuration list for PBXProject "Converter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
