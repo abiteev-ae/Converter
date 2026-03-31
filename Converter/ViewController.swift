@@ -38,8 +38,8 @@ class ConverterViewModel {
     }
     
     func convertTapped() {
-        guard let amount = Double(amountText), amount > 0 else {
-            onError?("Please enter a valid positive amount.")
+        guard let amount = Double(amountText), (0...100000).contains(amount) else {
+            onError?("Please enter amount from 0 to 100000.")
             return
         }
         
